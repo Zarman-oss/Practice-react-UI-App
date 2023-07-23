@@ -8,8 +8,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #202142;
-  color: #fff;
+  background-color: #ffffff;
+  color: #000000;
   line-height: 1.6;
 }
 
@@ -24,26 +24,31 @@ ul {
 }
 
 header {
+  font-weight: bold;
+  font-size: 40px;
   height: 70px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+  color: #ff6a95;
 }
 
 .card {
-  background-color: #fff;
+  background-color: #d7d7d7;
   color: #333;
   border-radius: 15px;
   padding: 40px 50px;
   margin: 20px 0;
   position: relative;
+  font-weight: bold;
 }
 
 .card.reverse {
-  background-color: rgba(0, 0, 0, 0.4);
-  color: #fff;
+  background-color: rgba(134, 134, 134, 0.4);
+  color: #000000;
+  font-weight: bold;
 }
 
 .card h2 {
@@ -103,12 +108,13 @@ header {
 .input-group {
   display: flex;
   flex-direction: row;
-  border: 1px solid #ccc;
-  padding: 8px 10px;
-  border-radius: 8px;
+  border: 1px solid #cecece;
+  padding: 10px 8px;
+  border-radius: 5px;
 }
 
 input {
+  padding: 5px;
   flex-grow: 2;
   border: none;
   font-size: 16px;
@@ -119,7 +125,7 @@ input:focus {
 }
 
 .feedback-stats {
-  color: #fff;
+  color: #000000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -153,6 +159,10 @@ input:focus {
   width: 100px;
   height: 40px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .btn-primary {
@@ -160,6 +170,8 @@ input:focus {
 }
 
 .btn-secondary {
+  font-weight: bold;
+  font-size: 16px;
   background: #ff6a95;
 }
 
