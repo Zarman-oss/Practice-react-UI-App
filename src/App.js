@@ -6,21 +6,17 @@ import FeedbackList from './Components/FeedbackList';
 import './index.css';
 import FeedbackData from './Data/FeedbackData';
 import FeedbackStats from './Components/FeedbackStats';
+import FeedbackContexr from './Context/FeedbackContexr';
 import FeedbackForm from './Components/FeedbackForm';
 import AboutPage from './Pages/AboutPage';
 import AboutIconLink from './Components/AboutIconLink';
 
-function App() {
-  const [feedback, setFeedback] = useState(FeedbackData);
 
-  const addFeedback = (newFeedback) => {
-    newFeedback.id = uuidv4();
-    setFeedback([newFeedback, ...feedback]);
-  };
-  const deleteFeedback = (id) => {
-    if (window.confirm('Are you sure?'))
-      setFeedback(feedback.filter((item) => item.id !== id));
-  };
+function App() {
+  
+
+
+
 
   return (
     <Router>
